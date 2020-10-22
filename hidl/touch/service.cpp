@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
+#ifdef LIVES_IN_SYSTEM
+#define LOG_TAG "lineage.touch@1.0-service.samsung"
+#else
 #define LOG_TAG "vendor.lineage.touch@1.0-service.samsung"
+#endif
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
